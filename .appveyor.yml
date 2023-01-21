@@ -11,7 +11,6 @@ build: off
 install:
 
   - java -jar ./artifacts/app-card-delivery.jar &
-  - java -jar ./artifacts/app-ibank.jar &
 
 build_script:
   - chmod +x gradlew
