@@ -23,12 +23,12 @@ public class DeliveryTest {
     }
 
     @Test
-    void checkAppeyorHappy() {
+    void checkAppeyorNotHappy() {
         //Configuration.holdBrowserOpen = true;
 
         $("[data-test-id='city'] input").sendKeys("Казань");
         $("[data-test-id='date'] input").sendKeys(actualDate(3, "dd MM yyyy"));
-        $("[data-test-id='name'] input").sendKeys("Иван Иванов");
+        $("[data-test-id='name'] input").sendKeys("IVAN AVANOV");
         $("[data-test-id='phone'] input").sendKeys("+79991112233");
         $("[data-test-id='agreement']").click();
         $$("button").findBy(text("Запланировать")).click();
