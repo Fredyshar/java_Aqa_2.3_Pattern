@@ -27,6 +27,7 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
 
     testImplementation 'com.codeborne:selenide:6.11.1'
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
 
 }
 
