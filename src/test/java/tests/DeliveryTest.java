@@ -5,19 +5,12 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.*;
 import data.DataGenerator;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 
 public class DeliveryTest {
-
-    private String actualDate(long daysToAdd, String pattern) {
-        return LocalDate.now().plusDays(daysToAdd).format(DateTimeFormatter.ofPattern(pattern));
-    }
 
     @BeforeEach
     void setup() {

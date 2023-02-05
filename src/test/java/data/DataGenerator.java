@@ -12,7 +12,9 @@ import java.util.Random;
 public class DataGenerator {
     private DataGenerator() {
     }
-
+    public  static String actualDate(long daysToAdd, String pattern) {
+        return LocalDate.now().plusDays(daysToAdd).format(DateTimeFormatter.ofPattern(pattern));
+    }
     private static Faker faker;
 
 
